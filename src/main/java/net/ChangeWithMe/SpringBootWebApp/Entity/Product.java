@@ -1,5 +1,7 @@
 package net.ChangeWithMe.SpringBootWebApp.Entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -16,6 +18,7 @@ public class Product {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "campaign_id")
+    @JsonBackReference
     private Campaign campaign;
 
     public long getProductSerialNumber() {

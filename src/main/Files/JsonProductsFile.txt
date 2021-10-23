@@ -1,0 +1,52 @@
+ [
+    {
+		"title": "mango",
+		"category": "food",
+		"price": 3.4
+	},
+	{
+		"title": "banana",
+		"category": "food",
+		"price": 2.3
+	},
+	{
+		"title": "chips",
+		"category": "food",
+		"price": 1.5
+	},
+	{
+		"title": "tv",
+		"category": "electronics",
+		"price": 350
+	},
+	{
+		"title": "computer",
+		"category": "electronics",
+		"price": 245
+	},
+	{
+		"title": "radio",
+		"category": "electronics",
+		"price": 35
+	},
+	{
+		"title": "perfume",
+		"category": "parm",
+		"price": 120
+	},
+	{
+		"title": "hair color",
+		"category": "parm",
+		"price": 19.5
+	},
+	{
+		"title": "refrigerator",
+		"category": "kitchen ",
+		"price": 750
+	},
+	{
+		"title": "oven",
+		"category": "kitchen ",
+		"price": 420
+	}
+]
