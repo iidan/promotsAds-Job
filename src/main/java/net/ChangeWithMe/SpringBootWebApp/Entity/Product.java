@@ -14,6 +14,9 @@ public class Product {
     private String category;
     private float price;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "campaign_id")
+    private Campaign campaign;
 
     public long getProductSerialNumber() {
         return productSerialNumber;

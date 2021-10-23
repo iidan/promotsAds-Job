@@ -2,6 +2,7 @@ package net.ChangeWithMe.SpringBootWebApp.Entity;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Table(name = "campaign")
@@ -13,6 +14,9 @@ public class Campaign {
     private String name;
     private Timestamp startDate;
     private float bid;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "campaign")
+    private List<Product> productList;
 
     public int getId() {
         return id;
