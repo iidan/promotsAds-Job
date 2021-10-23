@@ -49,4 +49,12 @@ public class Product {
     public void setPrice(float price) {
         this.price = price;
     }
+
+    public Campaign getCampaign() {
+        return campaign;
+    }
+
+    public void setCampaign(Campaign campaign) {
+        this.campaign = campaign;
+    }
 }

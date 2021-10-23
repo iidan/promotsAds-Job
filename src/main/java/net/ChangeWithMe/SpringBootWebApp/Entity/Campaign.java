@@ -49,4 +49,12 @@ public class Campaign {
     public void setBid(float bid) {
         this.bid = bid;
     }
+
+    public List<Product> getProductList() {
+        return productList;
+    }
+
+    public void setProductList(List<Product> productList) {
+        this.productList = productList;
+    }
 }
