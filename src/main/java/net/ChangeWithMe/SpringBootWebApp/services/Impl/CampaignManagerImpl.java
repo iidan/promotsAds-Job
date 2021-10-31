@@ -34,10 +34,6 @@ public class CampaignManagerImpl implements CampaignManager {
 
     @Override
     public Product getPromotedProduct(String category) {
-        Product product = productRepository.getProductWithHighestBidByCategory(category);
-        if (product == null) {
-            product = productRepository.getPromotedProductWithHighestBid();
-        }
-        return product;
+        return productRepository.getProductWithHighestBidByCategory(category);
     }
 }
